@@ -3,36 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>App helps to find GitHub user Account</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="bootstrap.min.css" />
-    <title>GitHub Finder</title>
   </head>
   <body>
     <nav class="navbar navbar-dark bg-primary mb-3">
       <div class="container">
-        <a href="#" class="navbar-brand">GitHub User Seach</a>
+        <a href="#" class="navbar-brand">GitHub Finder</a>
       </div>
     </nav>
 
     <div class="container searchContainer">
       <div class="search card card-body">
-        <h1>Search GitHub Users</h1>
-        <p class="lead">
-          Enter a user name to fetch a user profile and repos.
-        </p>
+        <h1>Search user account</h1>
+        <p class="lead">Fetch GitHub profile or repos</p>
         <input
           type="text"
+          name="search"
           id="searchUser"
           class="form-control"
-          placeholder="GitHub Username..."
+          placeholder="Enter username..."
         />
-        <br />
-        <div id="profile"></div>
       </div>
+      <br />
+      <div id="profile"></div>
     </div>
 
-    <footer class="fixed-bottom mt-5 p-3 text-center bg-secondary">
-      GitHub Finder &copy;
+    <footer class="footer p-3 text-center badge-info">
+      GitHub User Finder &copy; 2020
     </footer>
 
     <script
